@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Single Listing</title>
+<title>Contact</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="styles/single_listing_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/single_listing_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+
 </head>
 
 <body>
@@ -124,57 +123,43 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/single_background.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/contact_background.jpg"></div>
 		<div class="home_content">
-			<div class="home_title">Meus Cursos</div>
+			<div class="home_title">Concluir Pagamento</div>
 		</div>
 	</div>
 
-	<!-- Offers -->
+	<!-- Contact -->
 
-	<div class="listing">
-
-		<!-- Search -->
-
-		
-
-		<!-- Single Listing -->
-
+	<div class="contact_form_section">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="single_listing">
+				<div class="col">
 
-							<!-- Room -->
-							<div class="room">
-
-								<!-- Room -->
-								<div class="row">
-									<div class="col-lg-2">
-										<div class="room_image"><img src="images/banco_de_dados.png"></div>
-									</div>
-									<div class="col-lg-7">
-										<div class="room_content">
-											<div class="room_title">Banco de Dados</div>
-											<div class="room_text">Dominando Banco de dados, Conceitos, Linguagem SQL do Básico ao Avançado, Administração de Banco de Dados SQL Server.</div>
-										</div>
-									</div>
-									<div class="col-lg-3 text-lg-right">
-										<div class="room_button">
-											<div class="button book_button trans_200"><a href="bd_curso.html">Visualizar<span></span><span></span><span></span></a></div>
-										</div>
-									</div>
-								</div>	
-							</div>
-						</div>
+					<!-- Contact Form -->
+					<div class="contact_form_container">
+						<div class="contact_title text-center">Concluir Pagamento</div>
+						<form action="#" id="contact_form" class="contact_form text-center">
+						<select id="contact_form_name" class="contact_form_name input_field">
+						  <option style="color: black;" value="boleto">Boleto</option>
+						  <option  style="color: black;" value="credito">Cartão de crédito</option>
+						  <option  style="color: black;" value="tranferencia">Transferência online</option>
+						  <option style="color: black;" value="deposito">Depósito bancário</option>
+						</select>
+						<button type="submit" id="form_submit_button" class="form_submit_button button trans_200">Validar<span></span><span></span><span></span></button>
+						</form>							
+						</form>
 					</div>
+
 				</div>
+
 			</div>
-		</div>	
 
-	<!-- Footer -->
+		</div>
 
-	
+	</div>
+
+	<div class="elements"></div>
 
 	<!-- Copyright -->
 
@@ -190,15 +175,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 				<div class="col-lg-9 order-lg-2 order-1">
 					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
-						<div class="footer_nav">
-							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="index.html">home</a></li>
-								<li class="footer_nav_item"><a href="about.html">about us</a></li>
-								<li class="footer_nav_item"><a href="offers.html">offers</a></li>
-								<li class="footer_nav_item"><a href="blog.html">news</a></li>
-								<li class="footer_nav_item"><a href="contact.html">contact</a></li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -210,12 +186,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="js/single_listing_custom.js"></script>
+<script src="js/contact_custom.js"></script>
 
 </body>
 

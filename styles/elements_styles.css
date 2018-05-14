@@ -937,6 +937,22 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+.accordion-new
+{
+	height: 80px;
+	width: 100%;
+	border: solid 2px #ff9600;
+	background: #FFFFFF;
+	padding-left: 16px;
+	color: #07122c;
+	font-size: 14px;
+	font-weight: 600;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
 .accordion div
 {
 	max-width: 90%;
@@ -949,6 +965,10 @@ section
 	color: #FFFFFF;
 }
 .accordion:active
+{
+	background: #fffbfa !important;
+}
+.accordion-new:active
 {
 	background: #fffbfa !important;
 }
@@ -976,19 +996,99 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+.accordion-new::after
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 13px;
+	height: 100%;
+	content: 'resposta';
+	font-size: 16px;
+	color: #07122c;
+	font-weight: 600;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.accordion-question::after
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 13px;
+	height: 100%;
+	content: '';
+	font-size: 16px;
+	color: #07122c;
+	font-weight: 600;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.form_submit_button
+{
+	font-size: 13px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 53px;
+	padding-left: 29px;
+	padding-right: 29px;
+	background: #31124b;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.form_submit_button:hover
+{
+	opacity: 0.8;
+}
 .accordion.active::after
 {
 	color: #FFFFFF;
 	content: '-';
+}
+.accordion-new.active::after
+{
+	/*color: #FFFFFF;
+	content: 'outro';*/
 }
 .accordion:hover
 {
 	background: #fa6f1b;
 	color: #FFFFFF;
 }
+.accordion-new:hover
+{
+	/*background: #fa6f1b;
+	color: #FFFFFF;*/
+}
 .accordion:hover::after
 {
 	color: #FFFFFF;
+}
+.accordion-new:hover::after
+{
+	/*color: #FFFFFF;*/
 }
 .accordion_panel
 {

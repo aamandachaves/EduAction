@@ -41,7 +41,10 @@
 							<div class="user_box_login user_box_link"><a href="cart.html"><img src="images/cart.png" alt=""></a></div>
 							<div class="user_box_login user_box_link"><a href="reg_instrutor.html">Torne-se um Instrutor</a></div>
 							<div class="user_box_login user_box_link"><a href="login.html">Entrar</a></div>
+							<div class="user_box_login user_box_link"><a href="index.html">Sair</a></div>
 							<div class="user_box_login user_box_link"><a href="registrar.html">Cadastrar</a></div>
+							<div class="user_box_login user_box_link"><a href="avaliar.html">Avaliar</a></div>
+							<div class="user_box_login user_box_link"><a href="perfil.html">Perfil</a></div>
 							<div class="user_box_register user_box_link"><a href="contact.html">Fale Conosco</a></div>
 						</div>
 					</div>
@@ -66,6 +69,7 @@
 								<li class="main_nav_item"><a href="cart_others.html">Design</a></li>
 								<li class="main_nav_item"><a href="cart_others.html">Marketing</a></li>
 								<li class="main_nav_item"><a href="meus_cursos.html">Meus Cursos</a></li>
+								<li class="main_nav_item"><a href="add_curso.html">Enviar Curso</a></li>
 							</ul>
 						</div>
 						<div class="content_search ml-lg-0 ml-auto">
@@ -116,6 +120,7 @@
 				<li class="menu_item"><a href="cart_others.html">Design</a></li>
 				<li class="menu_item"><a href="cart_others.html">Marketing</a></li>
 				<li class="menu_item"><a href="meus_cursos.html">Meus Cursos</a></li>
+				<li class="menu_item"><a href="add_curso.html">Enviar Curso</a></li>
 			</ul>
 		</div>
 	</div>
@@ -281,35 +286,34 @@
 							<div class="search_panel">
 								<div class="elements">
 		<div class="container">
+		<div class="elements_accordions">
+									<div class="accordion_container">
+										<div class="accordion d-flex flex-row align-items-center"><div>Envie uma pergunta</div></div>
+										<div class="accordion_panel">
+											<div class="accordion_container">
+											<tr><br>
+												<div class="accordion-question"><form action="#" id="contact_form" class="contact_form text-center"><input type="text" id="contact_form_subject form_submit_button button trans_200" class="contact_form_subject input_field col-md-8" placeholder="Digite uma mensagem" required="required" data-error="Subject is required." required="">
+											<button type="submit" id="form_submit_button" class="form_submit_button button trans_200">Enviar<span></span><span></span><span></span></button></form><div></div></div>
+											</div>
+										</div>
+									</div>
+								</div>
 			<div class="row">
 				<div class="col">
 					<div class="pbars_accordions">
-					<div class="elements_title">Perguntas</div>
-						<div class="row pbars_accordions_container">
-							</div>
-
 							<div class="col-lg-12">
 								<div class="elements_accordions">
-
 									<div class="accordion_container">
-										<div class="accordion d-flex flex-row align-items-center active"><div>Aenean nec ipsum aliquet, pharetra magna id, interdum</div></div>
+										<div class="accordion d-flex flex-row align-items-center"><div>Boa tarde, quando devo usar o UNION e um SUBQUERIE?</div></div>
 										<div class="accordion_panel">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus.</p>
-										</div>
-									</div>
+											<p>Ola João, tudo bem! Obrigado por usa perguntas, muito boas para exemplficar situações de quando utilizar situações. UNION e SUBQUERYS, são bem distintos. Union utilizamos quando queremos realizar varias consultas que possuem a mesma estrutura, e possivelmente origens diferentes. Já subquerys  podemos utilzar como restrições, trazer campos calculados.e até dentro de expressões union.</p>
+											<div class="accordion_container">
+												<div class="accordion-new"><form action="#" id="contact_form" class="contact_form text-center"><input type="text" id="contact_form_subject form_submit_button button trans_200" class="contact_form_subject input_field col-md-8" placeholder="Digite uma mensagem" required="required" data-error="Subject is required." required="">
+											<button type="submit" id="form_submit_button" class="form_submit_button button trans_200">Enviar<span></span><span></span><span></span></button></form><div></div></div>
 
-									<div class="accordion_container">
-										<div class="accordion d-flex flex-row align-items-center"><div>Aenean nec ipsum aliquet, pharetra magna id, interdum</div></div>
-										<div class="accordion_panel">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus.</p>
+											</div>
 										</div>
-									</div>
 
-									<div class="accordion_container">
-										<div class="accordion d-flex flex-row align-items-center"><div>Aenean nec ipsum aliquet, pharetra magna id, interdum</div></div>
-										<div class="accordion_panel">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus.</p>
-										</div>
 									</div>
 
 								</div>
@@ -319,7 +323,11 @@
 					</div>
 
 				</div>
+				<form action="denunciar.html">
+				<button type="submit" id="form_submit_button" class="form_submit_button button trans_200">Denunciar<span></span><span></span><span></span></button>
+				</form>
 			</div>
+			<div class="offers_link"><a href="cart.html">Excluir curso</a></div>
 		</div>	
 	</div>
 	</div>
@@ -348,17 +356,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					</div>
 				</div>
 				<div class="col-lg-9 order-lg-2 order-1">
-					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
-						<div class="footer_nav">
-							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="index.html">home</a></li>
-								<li class="footer_nav_item"><a href="about.html">about us</a></li>
-								<li class="footer_nav_item"><a href="offers.html">offers</a></li>
-								<li class="footer_nav_item"><a href="blog.html">news</a></li>
-								<li class="footer_nav_item"><a href="#">contact</a></li>
-							</ul>
-						</div>
-					</div>
+					 
 				</div>
 			</div>
 		</div>
